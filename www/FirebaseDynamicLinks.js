@@ -6,7 +6,6 @@ module.exports = {
         exec(onSuccess, onError, PLUGIN_NAME, "onDynamicLink", []);
     },
     sendInvitation: function(options, onSuccess, onError) {
-        var opts = options || {};
-        exec(onSuccess, onError, PLUGIN_NAME, "sendInvitation", [opts]);
+        exec(onSuccess, onError, PLUGIN_NAME, "sendInvitation", [options || {}]);
     }
 };
